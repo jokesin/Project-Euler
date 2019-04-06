@@ -1,15 +1,11 @@
 with Ada.Text_IO; use Ada.Text_IO;
 
+with Common; use Common;
+
 procedure e1 is
    
    Result : Natural := 0;
-   
-   function IsMult (Val_1,Val_2 : Integer) return Boolean
-   is
-   begin
-      return (Val_1 mod Val_2 = 0);
-   end IsMult;
-      
+         
 begin
 
    for K in 1..999 loop

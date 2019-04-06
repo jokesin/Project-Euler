@@ -1,4 +1,5 @@
 with Ada.Text_IO; use Ada.Text_IO;
+with Common; use Common;
 
 procedure e2 is
    
@@ -6,13 +7,7 @@ procedure e2 is
    FibonacciNum_1 : Integer := 1;
    FibonacciNum_2 : Integer := 1;
    FibonacciNum : Integer := 0;
-   
-   function IsEven (Val : Integer) return Boolean
-   is
-   begin
-      return (Val mod 2 = 0);
-   end IsEven;
-   
+      
    function GetNextFibonacciNum(Val_1, Val_2 : Integer) return Integer
    is
    begin
